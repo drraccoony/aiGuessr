@@ -1,0 +1,22 @@
+{
+    "mashup": [
+        {
+            "id": 0,
+            "keyword1": "Blue A",
+            "keyword2": "Blue B",
+            "image": "imageFile.jpg"
+        },
+        {
+            "id": 1,
+            "keyword1": "Red A",
+            "keyword2": "Red B",
+            "image": "download2.png"
+        },
+        {
+            "id": 2,
+            "keyword1": "Green A",
+            "keyword2": "Green B",
+            "image": "anotherFile.jpg"
+        }
+    ]
+}
