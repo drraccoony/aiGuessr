@@ -4,19 +4,21 @@
             "id": 0,
             "keyword1": "Blue A",
             "keyword2": "Blue B",
-            "image": "imageFile.jpg"
+            "image": "test-image.jpg",
+            "hint": "Blue A and Blue B"
         },
         {
             "id": 1,
             "keyword1": "Red A",
             "keyword2": "Red B",
-            "image": "download2.png"
+            "image": "test-image.jpg",
+            "hint": "Red A and Red B"
         },
         {
             "id": 2,
             "keyword1": "Green A",
             "keyword2": "Green B",
-            "image": "anotherFile.jpg"
+            "image": "test-image.jpg"
         }
     ]
 }

@@ -22,8 +22,11 @@ New generations and images can be added by placing the image in the directory, a
     "id": 0,
     "keyword1": "Mario",
     "keyword2": "Seinfeld",
-    "image": "MarioAndSeinfeld.png"
+    "image": "MarioAndSeinfeld.png",
+    "hint": "Whats the deal with koopas?!"
     ```
+
+4. An optional `hint` key can be added.
 
 ## Issues
 

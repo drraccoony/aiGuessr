@@ -1,5 +1,5 @@
 // Fetch the json payload
-const response = await fetch("./src/js/mashup.json");
+const response = await fetch("./src/js/test.json");
 const json_data = await response.json();
 // Set some application constants.
 const APP_DEBUG = true
@@ -8,6 +8,7 @@ const html_image = document.getElementById("html_image");
 const debug_div = document.getElementById("debug_div");
 const debug_span = document.getElementById("debug_span");
 const guess_btn = document.getElementById("guess_btn");
+const hint_btn = document.getElementById("hint_btn");
 const newgame_btn = document.getElementById("newgame_btn");
 const keyword1 = document.getElementById("keyword1");
 const keyword2 = document.getElementById("keyword2");
@@ -34,39 +35,39 @@ html_image.addEventListener('error', function handleError() {
   });
 
 guess_btn.onclick = function(){
-    if ((keyword1.value.length === 0 || keyword2.value.length === 0))
+    if ((keyword1.value.length === 0 && keyword2.value.length === 0))
     {console.log('⚠️ Empty guess.');
-    show_message('Cant Guess Nothing!','You left one of your guesses blank. Try filling out both guesses.')
+    show_message('Cant Guess Nothing!','You left one of your guesses blank. Try filling out both guesses.','alert-danger')
     return -1;}
 
     if ((keyword1.value == keyword2.value) || (keyword2.value == keyword1.value))
     {console.log('⚠️ You cant guess the same thing twice!');
-    show_message('Two of the same?','You guessed the same thing twice, guess something different.')
+    show_message('Two of the same?','You guessed the same thing twice, guess something different.','alert-danger')
     return -1;}
-
-    console.log('Your guess is ' + keyword1.value + ' & ' + keyword2.value)
     // Check if they got both right in one go
     if ((keyword1.value == json_data.mashup[item_id].keyword1) && (keyword2.value == json_data.mashup[item_id].keyword2))
     {
         console.log('✅ Correct guess! You got both words right!')
-        show_message('Great job!','You figured out the AI mashup!')
+        show_message('Great job!','You figured out the AI mashup!','alert-success')
         keyword_success(keyword1);
         keyword_success(keyword2);
         keyword1_right = true;
         keyword2_right = true;
     } else if ((keyword1.value == json_data.mashup[item_id].keyword2) && (keyword2.value == json_data.mashup[item_id].keyword1)) {
-        show_message('Great job!','You figured out the AI mashup!')
+        show_message('Great job!','You figured out the AI mashup!','alert-success')
+        keyword_success(keyword1);
+        keyword_success(keyword2);
         console.log('✅ Correct guess! You got both words right! (They were flipped)')
     }
     else if (((keyword1.value == json_data.mashup[item_id].keyword1) || (keyword1.value == json_data.mashup[item_id].keyword2)) && keyword1_right == false) {
         console.log('✅ You got word 1 right')
-        show_message('Thats one...','You figured out one of the two mashup keywords. Keep trying!')
+        show_message('Thats one...','You figured out one of the two mashup keywords. Keep trying!','alert-success')
         keyword_success(keyword1);
         keyword1_right = true;
     }
     else if (((keyword2.value == json_data.mashup[item_id].keyword1) || (keyword2.value == json_data.mashup[item_id].keyword2)) && keyword2_right == false) {
         console.log('✅ You got word 2 right')
-        show_message('Thats one...','You figured out one of the two mashup keywords. Keep trying!')
+        show_message('Thats one...','You figured out one of the two mashup keywords. Keep trying!','alert-success')
         keyword_success(keyword2);
         keyword2_right = true;
     } else {
@@ -74,7 +75,7 @@ guess_btn.onclick = function(){
         var remaining_gusses = MAX_GUESSES-guesses
         if (MAX_GUESSES == -1)
         {console.log('❌ Wrong guess, Try again!')
-        show_message('Not Quite...','Give it another go.')}
+        show_message('Not Quite...','Give it another go.','alert-warning')}
         else {
             if (gameover)
             {console.log('❌ Wrong guess! Game Over!')}
@@ -84,10 +85,13 @@ guess_btn.onclick = function(){
     }
 };
 
-function show_message(header, msg) 
+function show_message(header, msg, type) 
 {
-    guess_feedback.style.display = 'block';
     guess_feedback.innerHTML = '<strong>' + header + '</strong> ' + msg;
+    guess_feedback.className = '';
+    guess_feedback.classList.add('alert');
+    guess_feedback.classList.add(type);
+    guess_feedback.style.display = 'block';
 }
 
 function keyword_success(id)
@@ -132,8 +136,18 @@ newgame_btn.onclick = function() {
     }
 };
 
+hint_btn.onclick = function() {
+    {
+        show_message('Hint: ',json_data.mashup[item_id].hint, 'alert-info')
+    }
+};
+
 function render_items() 
 {
     html_image.src = 'img/' + json_data.mashup[item_id].image
     debug_span.innerHTML = '<u>' + json_data.mashup[item_id].keyword1 + '</u> & <u>' + json_data.mashup[item_id].keyword2 + '</u>. Using image: <u>' + json_data.mashup[item_id].image + '</u>.'
+    if (json_data.mashup[item_id].hint)
+    hint_btn.style.display = '';
+    else
+    hint_btn.style.display = 'none';
 }
