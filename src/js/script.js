@@ -12,6 +12,7 @@ const newgame_btn = document.getElementById("newgame_btn");
 const keyword1 = document.getElementById("keyword1");
 const keyword2 = document.getElementById("keyword2");
 const guess_feedback = document.getElementById("guess_feedback");
+const app_error = document.getElementById("app_error");
 var guesses = 0;
 var gameover = false;
 var keyword1_right = false;
@@ -20,6 +21,17 @@ var keyword2_right = false;
 // Pick a random item from this json
 var item_id = get_item(json_data);
 render_items();
+
+html_image.addEventListener('error', function handleError() {
+    const defaultImage =
+      'https://minecraft-max.net/upload/resize_cache/iblock/a70/320_320_14a821bd1cef7808de0ee325b13280e30/a70cfdb1c91ed0c6117530332d071b87.png';
+  
+    html_image.src = defaultImage;
+    html_image.alt = 'default';
+    app_error.style.display = 'block';
+    app_error.innerHTML = '<strong>404!!</strong> An image is missing. (' + json_data.mashup[item_id].image + ')<br><a href="#" id="newgame_btn">Generate new item</a>';
+
+  });
 
 guess_btn.onclick = function(){
     if ((keyword1.value.length === 0 || keyword2.value.length === 0))
@@ -115,6 +127,7 @@ newgame_btn.onclick = function() {
         keyword2_right = false;
         guess_feedback.style.display = 'none';
         item_id = get_item(json_data);
+        app_error.style.display = 'none';
         render_items();
     }
 };
