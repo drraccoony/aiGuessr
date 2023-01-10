@@ -12,7 +12,9 @@ const debug_span = document.getElementById("debug_span");
 const guess_btn = document.getElementById("guess_btn");
 const hint_btn = document.getElementById("hint_btn");
 const newgame_btn = document.getElementById("newgame_btn");
+const giveup_btn = document.getElementById("giveup_btn");
 const newgame_btn2 = document.getElementById("newgame_btn2");
+const randomreveal_btn = document.getElementById("randomreveal_btn");
 const clear_score_btn = document.getElementById("clear-score");
 const keyword1 = document.getElementById("keyword1");
 const keyword2 = document.getElementById("keyword2");
@@ -38,8 +40,6 @@ function init() {
     document.getElementById("table-totalmashes").innerHTML = json_data.mashup.length;
     document.getElementById("table-guesses").innerHTML = totalWinMashes;
     document.getElementById("table-score").innerHTML = score;
-    
-    
 }
 
 // checkBadLinks(json_data);
@@ -77,8 +77,43 @@ html_image.addEventListener('error', function handleError() {
 
   });
 
-guess_btn.onclick = function(){
+randomreveal_btn.onclick = function(){
+    let x = (Math.floor(Math.random() * 2) == 0);
+    console.log(x)
+    if(x){
+        keyword1.style.backgroundColor = '#e6f5b0';
+        keyword1.style.color = 'black';
+        keyword1.value = json_data.mashup[item_id].keyword1;
+        keyword1.disabled = true;
+        keyword1_right = true;
+        randomreveal_btn.disabled = true;
+    }else{
+        keyword2.style.backgroundColor = '#e6f5b0';
+        keyword2.style.color = 'black';
+        keyword2.value = json_data.mashup[item_id].keyword2;
+        keyword2.disabled = true;
+        keyword2_right = true;
+        randomreveal_btn.disabled = true;
+    }
+}
 
+giveup_btn.onclick = function(){
+    keyword1.style.backgroundColor = '#f5b0c3';
+    keyword1.style.color = 'black';
+    keyword1.value = json_data.mashup[item_id].keyword1;
+    keyword1.disabled = true;
+    keyword2.style.backgroundColor = '#f5b0c3';
+    keyword2.style.color = 'black';
+    keyword2.value = json_data.mashup[item_id].keyword2;
+    keyword2.disabled = true;
+    randomreveal_btn.disabled = true;
+    giveup_btn.disabled = true;
+    document.getElementById("newgame_btn2").style.display = 'inline';
+    document.getElementById("hint_btn").style.display = 'none';
+    document.getElementById("guess_btn").style.display = 'none';
+}
+
+guess_btn.onclick = function(){
     //Make everything lower case so we don't have to deal with case
     let guess1 = keyword1.value.toLowerCase();
     let guess2 = keyword2.value.toLowerCase();
@@ -118,16 +153,18 @@ guess_btn.onclick = function(){
         // Does the word1 match either keyword? If so, mark it right.
         console.log('✅ You got word 1 right')
         document.getElementById("table-itemvalue").innerHTML = item_value;
-        show_message('Thats one...','You figured out one of the two mashup keywords. Keep trying!','alert-success')
+        show_message('Thats one...','You figured out one of the two mashup keywords.','alert-success')
         keyword_success(keyword1);
+        randomreveal_btn.disabled = true;
         keyword1_right = true;
     }
     else if (((guess2 == keyword1_json) || (guess2 == keyword2_json)) && keyword2_right == false) {
         // Does the word2 match either keyword? If so, mark it right.
         console.log('✅ You got word 2 right')
         document.getElementById("table-itemvalue").innerHTML = item_value;
-        show_message('Thats one...','You figured out one of the two mashup keywords. Keep trying!','alert-success')
+        show_message('Thats one...','You figured out one of the two mashup keywords.','alert-success')
         keyword_success(keyword2);
+        randomreveal_btn.disabled = true;
         keyword2_right = true;
     } else {
         // Nothing guessed correctly
@@ -179,7 +216,7 @@ function item_victory(value) {
     document.getElementById("newgame_btn2").style.display = 'inline';
     document.getElementById("hint_btn").style.display = 'none';
     document.getElementById("guess_btn").style.display = 'none';
-    
+    randomreveal_btn.disabled = true;
 }
 
 function keyword_reset(id)
@@ -219,6 +256,8 @@ newgame_btn.onclick = function() {
         document.getElementById("newgame_btn2").style.display = 'none';
         document.getElementById("hint_btn").style.display = '';
         document.getElementById("guess_btn").style.display = '';
+        randomreveal_btn.disabled = false;
+        giveup_btn.disabled = false;
         render_items();
     }
 };
@@ -235,6 +274,8 @@ newgame_btn2.onclick = function() {
         document.getElementById("newgame_btn2").style.display = 'none';
         document.getElementById("hint_btn").style.display = '';
         document.getElementById("guess_btn").style.display = '';
+        randomreveal_btn.disabled = false;
+        giveup_btn.disabled = false;
         render_items();
     }
 };
