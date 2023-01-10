@@ -48,16 +48,16 @@
 			  <button class="btn btn-link" style="text-decoration: none;" type="button" data-toggle="modal" data-target="#myModal"><i class="fa-solid fa-trash"></i> Clear Score</button>
 			</div>
 		  </div>
-				<h3>Whats your guess?</h3>
+				<h2>Whats your guess?</h2>
 				<form onsubmit="return false;" style="display: block; margin: auto">
 					<div class="row">
-						<div class="col-4">
+						<div class="col-lg-4 col-sm-full">
 							<input type="text" class="guessbox form-control input-lg" name="keyword1" id="keyword1" placeholder="Guess 1">
 						</div>
-						<div class="col-4">
+						<div class="col-lg-4 col-sm-full">
 							<input type="text" class="guessbox form-control input-lg" name="keyword2" id="keyword2" placeholder="Guess 2">
 						</div>
-						<div class="col-4">
+						<div class="col-lg-4 col-sm-full">
 							<button type="submit" style="width:100%" class="guessbtn btn btn-primary btn-lg btn-block" id="guess_btn">Guess</button>
 							<button type="submit" class="guessbtn btn btn-warning btn-lg btn-block" id="hint_btn">Hint!</button>
 							<button type="submit" style="width:100%; display: none;" class="guessbtn btn btn-success btn-lg btn-block" id="newgame_btn2">Next Guess</button>
@@ -65,12 +65,14 @@
 					</div>
 					<div class="alert alert-warning" id="guess_feedback" role="alert" style="display: none;"></div>
 					
-					<div style="margin-top: 30px">
-						<h4>Game Options</h4>
-						<button class="btn btn-primary btn-sm" id="newgame_btn"><i class="fa-solid fa-arrows-rotate"></i> Get New Mashup</button>
-						<button class="btn btn-warning btn-sm" id="randomreveal_btn"><i class="fa-solid fa-asterisk"></i> Reveal Random Keyword</button>
-						<button class="btn btn-danger btn-sm" id="giveup_btn"><i class="fa-solid fa-question"></i> Give Up</button>
-						<!-- <button class="btn btn-primary btn-sm" id="helpmodal" data-toggle="modal" data-target="#exampleModal">Help</button> -->
+					<div class="" style="margin-top: 30px;">
+						<div class="col-lg-4 col-md-full">
+							<h4>Game Options</h4>
+							<button class="btn btn-primary btn-sm" id="newgame_btn"><i class="fa-solid fa-arrows-rotate"></i> Get New Mashup</button>
+							<button class="btn btn-warning btn-sm" id="randomreveal_btn"><i class="fa-solid fa-asterisk"></i> Reveal Random Keyword</button>
+							<button class="btn btn-danger btn-sm" id="giveup_btn"><i class="fa-solid fa-question"></i> Give Up</button>
+							<!-- <button class="btn btn-primary btn-sm" id="helpmodal" data-toggle="modal" data-target="#exampleModal">Help</button> -->
+						</div>	
 					</div>
 				</form>
 			</div>
@@ -116,7 +118,9 @@
 	
 		<!-- Copyright -->
 		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-		  Created in 2023 by <a class="text-white" href="https://www.twitch.tv/artemis_dragmire">DrRaccoon</a> and <a class="text-white" href="https://www.twitch.tv/artemis_dragmire">ArtemisDragmire</a>. View project on <a href="https://github.com/drraccoony/aiGuessr" class="text-white">Github</a>. v1.0.2
+		  Created in 2023 by <a class="text-white" href="https://www.twitch.tv/artemis_dragmire">DrRaccoon</a> and <a class="text-white" href="https://www.twitch.tv/artemis_dragmire">ArtemisDragmire</a>.
+		  View project on <a href="https://github.com/drraccoony/aiGuessr" class="text-white">Github</a>.
+		  v1.0.3
 		</div>
 	  </footer>
 	  <!-- Footer -->
