@@ -43,33 +43,27 @@ function init() {
 }
 
 // checkBadLinks(json_data);
+// function checkBadLinks(data) {
+//     console.log(data)
+//     var myStringArray = data.mashup;
+//     var arrayLength = myStringArray.length;
+//     for (var i = 0; i < arrayLength; i++) {
+//         // console.log(myStringArray[i]);
+//         let test = imageExists('img/' + myStringArray[i].image)
+//         function imageExists(image_url){
 
-document.getElementById("checkLinksBtn").onclick = function(){
-    checkBadLinks(json_data);
-}
-
-
-function checkBadLinks(data) {
-    console.log('Checking links...')
-    var myStringArray = data.mashup;
-    var arrayLength = myStringArray.length;
-    for (var i = 0; i < arrayLength; i++) {
-        // console.log(myStringArray[i]);
-        let test = imageExists('img/' + myStringArray[i].image)
-        function imageExists(image_url){
-
-            var http = new XMLHttpRequest();
+//             var http = new XMLHttpRequest();
         
-            http.open('HEAD', image_url, false);
-            http.send();
+//             http.open('HEAD', image_url, false);
+//             http.send();
         
-            return http.status != 404;
+//             return http.status != 404;
         
-        }
+//         }
 
-        //Do something
-    }
-}
+//         //Do something
+//     }
+// }
 
 
 html_image.addEventListener('error', function handleError() {
