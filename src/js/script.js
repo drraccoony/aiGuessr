@@ -1,7 +1,7 @@
 // Set some application constants.
-const APP_DEBUG = false                     // Enable more verbose logging to browser console.
+var APP_DEBUG = false                       // Enable more verbose logging to browser console.
 const MAX_GUESSES = -1;                     // Define max number of guesses per round. -1 to disable
-const APP_VERSION = '1.0.6';                // Application version
+const APP_VERSION = '1.0.8';                // Application version
 const SCORE_TRACKING = false;               // Should the application log and display scores
 const SCORE_BASE = 500;                     // Score: Starting value for a guess.
 const SCORE_DECAY = -75;                    // Amount to decay score on wrong guesses
@@ -43,7 +43,22 @@ var keyword2_right = false;
 var item_id = get_item(json_data);
 render_items();
 init();
-// checkBadLinks(json_data);
+
+// Define some custom commands in the JS Console.
+Object.defineProperty(window, 'enableDebug', {
+    get: function() {
+      console.log("Enabling Debug!");
+      APP_DEBUG = true;
+    }
+  });
+
+Object.defineProperty(window, 'checkLinks', {
+    get: function() {
+        console.log('Checking Links...')
+        console.log('If you see 404 errors, those are bad JSON references or the file is missing. This should only take a few seconds...')
+        checkBadLinks(json_data);
+    }
+});
 
 function init() {
     console.log('App v' + APP_VERSION + ' Initalized. Debugging ' + APP_DEBUG)
@@ -51,6 +66,35 @@ function init() {
     document.getElementById("table-totalmashes").innerHTML = json_data.mashup.length;
     document.getElementById("table-guesses").innerHTML = totalWinMashes;
     document.getElementById("table-score").innerHTML = score;
+    firstLoad();
+}
+
+function GetCookie(name) {
+    var arg=name+"=";
+    var alen=arg.length;
+    var clen=document.cookie.length;
+    var i=0;
+
+    while (i<clen) {
+        var j=i+alen;
+            if (document.cookie.substring(i,j)==arg)
+                return "here";
+            i=document.cookie.indexOf(" ",i)+1;
+            if (i==0) 
+                break;
+    }
+
+    return null;
+}
+
+function firstLoad() {
+    var visit=GetCookie("COOKIE1");
+    if (visit==null){
+        $('#helpModal').modal('toggle');
+    }
+    var expire=new Date();
+    expire=new Date(expire.getTime()+7776000000);
+    document.cookie="COOKIE1=here; expires="+expire;
 }
 
 function checkBadLinks(data) {

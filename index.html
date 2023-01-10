@@ -13,7 +13,7 @@
 <body>
 	
 	<div class="container">
-		<h1>AiGuessr</h1>
+		<h1>AiGuessr <i class="fa-solid fa-circle-question fa-2xs" style="color: #999" id="helpmodal" data-toggle="modal" data-target="#helpModal"></i></h1>
 		<div class="alert alert-danger" id="app_error" role="alert" style="display: none;"></div>
 
 
@@ -66,12 +66,12 @@
 					<div class="alert alert-warning" id="guess_feedback" role="alert" style="display: none;"></div>
 					
 					<div class="" style="margin-top: 30px;">
-						<div class="col-lg-4 col-md-full">
+						<div class="col-lg-6 col-md-full">
 							<h4>Game Options</h4>
 							<button class="btn btn-primary btn-sm" id="newgame_btn"><i class="fa-solid fa-arrows-rotate"></i> Get New Mashup</button>
-							<button class="btn btn-warning btn-sm" id="randomreveal_btn"><i class="fa-solid fa-asterisk"></i> Reveal Random Keyword</button>
-							<button class="btn btn-danger btn-sm" id="giveup_btn"><i class="fa-solid fa-question"></i> Give Up</button>
-							<!-- <button class="btn btn-primary btn-sm" id="helpmodal" data-toggle="modal" data-target="#exampleModal">Help</button> -->
+							<button class="btn btn-warning btn-sm" id="randomreveal_btn">Reveal Random Keyword</button>
+							<button class="btn btn-danger btn-sm" id="giveup_btn">Give Up</button>
+							<!-- <button class="btn btn-primary btn-sm" id="helpmodal" data-toggle="modal" data-target="#helpModal">Help</button> -->
 						</div>	
 					</div>
 				</form>
@@ -149,6 +149,40 @@
 			<div class="modal-footer">
 			  <button type="button" class="btn btn-danger" id="clear-score">Delete Save</button>
 			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="modal fade" id="helpModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">About AiGuessr</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<p>Welcome to AI Mashup Guesser!</p>
+
+				<p>The goal of the game is to guess which two characters/people/things have been mashed together.
+				So, for example if you think the image above is a result of mashing together Picard and Abraham Lincoln -- you would put Picard
+				in one of the answer boxes, and Abraham Lincoln in the other.</p>
+				<ul>
+					<li>The answers are not case sensitive, but do need to match exactly otherwise.</li>
+					<li>If you feel you got it right but it won't accept it, there's no shame in using the "give up" or "reveal random keyword" buttons to help you.</li>
+					<li>Most answers are proper nouns, either real people or fictional characters.</li>
+					<li>Some are "things" but these are rare.</li>
+				</ul>
+				<p>This pack has been crafted specifically for submission to Vinesauce, as such some of the answers are specifically tailored to the stream's culture/memes.</p>
+
+				<p>More mashups may be added in the future! To see this help again, click on the <i class="fa-solid fa-circle-question"></i> near the top of the page.</p>
+
+				<p>Thanks for checking it out!</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Ah, okay!</button>
 			</div>
 		  </div>
 		</div>
