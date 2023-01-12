@@ -130,7 +130,7 @@ randomreveal_btn.onclick = function () {
     if (x) {
         keyword1.style.backgroundColor = '#e6f5b0';
         keyword1.style.color = 'black';
-        keyword1_json = json_data.mashup[item_id].keyword1;
+        let keyword1_json = json_data.mashup[item_id].keyword1;
         if (Array.isArray(keyword1_json)) {
             keyword1.value = keyword1_json[0];
         } else {
@@ -142,7 +142,7 @@ randomreveal_btn.onclick = function () {
     } else {
         keyword2.style.backgroundColor = '#e6f5b0';
         keyword2.style.color = 'black';
-        keyword2_json = json_data.mashup[item_id].keyword2;
+        let keyword2_json = json_data.mashup[item_id].keyword2;
         if (Array.isArray(keyword2_json)) {
             keyword2.value = keyword2_json[0];
         } else {
@@ -157,7 +157,7 @@ randomreveal_btn.onclick = function () {
 giveup_btn.onclick = function () {
     keyword1.style.backgroundColor = '#f5b0c3';
     keyword1.style.color = 'black';
-    keyword1_json = json_data.mashup[item_id].keyword1;
+    let keyword1_json = json_data.mashup[item_id].keyword1;
     if (Array.isArray(keyword1_json)) {
         keyword1.value = keyword1_json[0];
     } else {
@@ -166,7 +166,7 @@ giveup_btn.onclick = function () {
     keyword1.disabled = true;
     keyword2.style.backgroundColor = '#f5b0c3';
     keyword2.style.color = 'black';
-    keyword2_json = json_data.mashup[item_id].keyword2;
+    let keyword2_json = json_data.mashup[item_id].keyword2;
     if (Array.isArray(keyword2_json)) {
         keyword2.value = keyword2_json[0];
     } else {
@@ -187,7 +187,7 @@ guess_btn.onclick = function () {
     let keyword1_json = json_data.mashup[item_id].keyword1;
     let keyword2_json = json_data.mashup[item_id].keyword2;
 
-    // Build a list of all of the correct keywords, taking the array directly from JSON if it was stored as such, otherwise, assuming it was a single string
+    // Build a list of all of the correct keywords, taking the array directly from JSON if it was stored as such, otherwise, assuming it was a single string and building a new single-element array from scratch
     let keywordlist1;
     let keywordlist2;
 
@@ -239,7 +239,7 @@ guess_btn.onclick = function () {
         keyword_success(keyword2);
         debugThatShiz('✅ Correct guess! You got both words right! (They were flipped)')
     }
-    else if (((keywordlist1.includes(guess1)) || (keywordlist2.includes(guess1))) && keyword1_right == false) {
+    else if ((((keywordlist1.includes(guess1)) || (keywordlist2.includes(guess1)))) && keyword1_right == false) {
         // Does the word1 match either keyword? If so, mark it right.
         debugThatShiz('✅ You got word 1 right')
         document.getElementById("table-itemvalue").innerHTML = item_value;
@@ -248,7 +248,7 @@ guess_btn.onclick = function () {
         randomreveal_btn.disabled = true;
         keyword1_right = true;
     }
-    else if (((keywordlist1.includes(guess2)) || (keywordlist2.includes(guess2))) && keyword2_right == false) {
+    else if ((((keywordlist1.includes(guess2)) || (keywordlist2.includes(guess2)))) && keyword2_right == false) {
         // Does the word2 match either keyword? If so, mark it right.
         debugThatShiz('✅ You got word 2 right')
         document.getElementById("table-itemvalue").innerHTML = item_value;
