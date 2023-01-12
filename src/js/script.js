@@ -164,8 +164,25 @@ guess_btn.onclick = function () {
     //Make everything lower case so we don't have to deal with case
     let guess1 = keyword1.value.toLowerCase();
     let guess2 = keyword2.value.toLowerCase();
-    let keyword1_json = json_data.mashup[item_id].keyword1.toLowerCase();
-    let keyword2_json = json_data.mashup[item_id].keyword2.toLowerCase();
+    let keyword1_json = json_data.mashup[item_id].keyword1;
+    let keyword2_json = json_data.mashup[item_id].keyword2;
+
+    let keywordlist1;
+    let keywordlist2;
+
+    if (Array.isArray(keyword1_json)) {
+        keywordlist1 = keyword1_json;
+        // TODO: Iterate over the keywords and .toLowerCase() them all
+    } else {
+        keywordlist1 = new Array(keyword1_json.toLowerCase());
+    }
+
+    if (Array.isArray(keyword2_json)) {
+        keywordlist2 = keyword1_json;
+        // TODO: Iterate over the keywords and .toLowerCase() them all
+    } else {
+        keywordlist2 = new Array(keyword2_json.toLowerCase());
+    }
 
     if ((keyword1.value.length === 0 && keyword2.value.length === 0)) {
         debugThatShiz('⚠️ Empty guess.');
