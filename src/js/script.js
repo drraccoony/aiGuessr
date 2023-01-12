@@ -239,20 +239,20 @@ guess_btn.onclick = function () {
         keyword_success(keyword2);
         debugThatShiz('✅ Correct guess! You got both words right! (They were flipped)')
     }
-    else if ((((keywordlist1.includes(guess1)) || (keywordlist2.includes(guess1)))) && keyword1_right == false) {
+    else if (((keywordlist1.includes(guess1)) || (keywordlist2.includes(guess1))) && keyword1_right == false) {
         // Does the word1 match either keyword? If so, mark it right.
         debugThatShiz('✅ You got word 1 right')
         document.getElementById("table-itemvalue").innerHTML = item_value;
-        show_message('Thats one...', 'You figured out one of the two mashup keywords.', 'alert-success')
+        show_message('That\'s one...', 'You figured out one of the two mashup keywords.', 'alert-success')
         keyword_success(keyword1);
         randomreveal_btn.disabled = true;
         keyword1_right = true;
     }
-    else if ((((keywordlist1.includes(guess2)) || (keywordlist2.includes(guess2)))) && keyword2_right == false) {
+    else if (((keywordlist1.includes(guess2)) || (keywordlist2.includes(guess2))) && keyword2_right == false) {
         // Does the word2 match either keyword? If so, mark it right.
         debugThatShiz('✅ You got word 2 right')
         document.getElementById("table-itemvalue").innerHTML = item_value;
-        show_message('Thats one...', 'You figured out one of the two mashup keywords.', 'alert-success')
+        show_message('That\'s one...', 'You figured out one of the two mashup keywords.', 'alert-success')
         keyword_success(keyword2);
         randomreveal_btn.disabled = true;
         keyword2_right = true;
