@@ -114,7 +114,8 @@
             "id": 11,
             "keyword1": "Morshu",
             "keyword2": "Goku",
-            "image": "Morshu x Goku.png"
+            "image": "Morshu x Goku.png",
+            "hint": "Come back when your power level is a little mmmmmmmmmm higher"
         },
 		{
             "id": 12,
@@ -178,7 +179,8 @@
                 "Lady Dommy",
                 "Dommy Mommy"
             ],
-            "image": "Nathan x Lady D.png"
+            "image": "Nathan x Lady D.png",
+            "hint": "He's a lot taller than he looks"
         },
 		{
             "id": 16,
@@ -211,7 +213,8 @@
                 "Thomas the Tank Engine",
                 "Thomas"
             ],
-            "image": "Obrien x Thomas the tank engine.png"
+            "image": "Obrien x Thomas the tank engine.png",
+            "hint": "Move bitch, get out the way. I've got a transporter to repair"
         },
 		{
             "id": 18,
@@ -220,7 +223,8 @@
                 "Frodo",
                 "Frodo Baggins"
             ],
-            "image": "Odo x Frodo.png"
+            "image": "Odo x Frodo.png",
+            "hint": "Saaaaaaaam, why are there roses on the promenade"
         },
 		{
             "id": 19,
@@ -230,7 +234,8 @@
                 "Gordon Freeman",
                 "Freeman"
             ],
-            "image": "Peewee Herman x Gordon Freeman .png"
+            "image": "Peewee Herman x Gordon Freeman .png",
+            "hint": "This is your brain on resonance cascades"
         },
 		{
             "id": 20,
@@ -629,7 +634,8 @@
                 "Robert Picardo"
             ],
             "keyword2": "Bob Ross",
-            "image": "The Doctor x Bob Ross.png"
+            "image": "The Doctor x Bob Ross.png",
+            "hint": "Happy little photons"
         },
 		{
             "id": 54,
@@ -703,7 +709,8 @@
                 "Mister White",
                 "Mr White"
             ],
-            "image": "Tommy W x Walter White.png"
+            "image": "Tommy W x Walter White.png",
+            "hint": "Oh hi waltuh"
         },
 		{
             "id": 60,
@@ -849,7 +856,8 @@
                 "Vinesauce"
             ],
             "keyword2": "John Malkovich",
-            "image": "Vinny x John Malkovich .png"
+            "image": "Vinny x John Malkovich .png",
+            "hint": "Being John Streamer"
         },
 		{
             "id": 69,
@@ -862,7 +870,8 @@
                 "Vinesauce"
             ],
             "keyword2": "Kreygasm",
-            "image": "Vinny x Kreygasm.png"
+            "image": "Vinny x Kreygasm.png",
+            "hint": "Banned due to gasm policy"
         },
 		{
             "id": 70,
@@ -945,7 +954,8 @@
                 "RubberNinja",
                 "Ross Odonovan"
             ],
-            "image": "Vinny x Ross.png"
+            "image": "Vinny x Ross.png",
+            "hint": "The newest member of the gamegrumps"
         },
 		{
             "id": 75,
@@ -1099,7 +1109,8 @@
             "id": 85,
             "keyword1": "Wolf Link",
             "keyword2": "Dusa",
-            "image": "Wolf Link x Dusa.png"
+            "image": "Wolf Link x Dusa.png",
+            "hint": "Hades x Zelda"
         },
 		{
             "id": 86,
@@ -1150,7 +1161,8 @@
                 "Octoling",
                 "Octarian"
             ],
-            "image": "Amogus x Splatoon.png"
+            "image": "Amogus x Splatoon.png",
+            "hint": "I saw woomy vent"
         },
 		{
             "id": 91,
@@ -1166,7 +1178,8 @@
             "id": 92,
             "keyword1": "Britney Spears",
             "keyword2": "John Malkovich",
-            "image": "Britney Spears x John Malkovich.png"
+            "image": "Britney Spears x John Malkovich.png",
+            "hint": "Be me baby one more time"
         },
 		{
             "id": 93,
@@ -1237,7 +1250,7 @@
                 "Buster Baxter"
             ],
             "image": "Cloud x Buster from Arnold.png",
-            "hint" : "Edgy protagonist x character from Hey Arnold"
+            "hint" : "Edgy protagonist x character from Arthur"
         },
 		{
             "id": 99,
@@ -1314,7 +1327,8 @@
                 "Predator",
                 "The Predator"
             ],
-            "image": "DeDeDe x Predator.png"
+            "image": "DeDeDe x Predator.png",
+            "hint": "No one expected Nintendo to approve this crossover"
         },
 		{
             "id": 105,
@@ -1368,7 +1382,8 @@
                 "Marshall Bruce Mathers III"
             ],
             "keyword2": "Harrison Ford",
-            "image": "Eminem x Harrison ford.png"
+            "image": "Eminem x Harrison ford.png",
+            "hint": "Padme's spaghetti"
         },
 		{
             "id": 109,
@@ -1412,7 +1427,8 @@
                 "Alyx",
                 "Alyx Vance"
             ],
-            "image": "Freeman x Alyx.png"
+            "image": "Freeman x Alyx.png",
+            "hint": "Half life shippers have gone too far this time"
         },
 		{
             "id": 112,
@@ -1684,8 +1700,8 @@
             ],
             "keyword2": 
             [
-                "Freddy Mercury",
-                "Freddie Mercury"
+                "Freddie Mercury",
+                "Freddy Mercury"
             ],
             "image": "Karl x Freddy Mercury.png"
         },
@@ -1737,7 +1753,8 @@
                 "Kermit",
                 "Kermit the Frog"
             ],
-            "image": "Kefka x Kermit.png"
+            "image": "Kefka x Kermit.png",
+            "hint": "it ain't easy being a clown"
         },
 		{
             "id": 138,
