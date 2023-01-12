@@ -195,7 +195,8 @@
                 "Miles Prower",
                 "Miles Tails Prower"
             ],
-            "image": "Obrien x Tails.png"
+            "image": "Obrien x Tails.png",
+            "hint": "He must suffer"
         },
 		{
             "id": 17,
@@ -276,7 +277,8 @@
                 "Patrick Stewart"
             ],
             "keyword2": "Paris Hilton",
-            "image": "Picard x Paris Hilton.png"
+            "image": "Picard x Paris Hilton.png",
+            "hint": "Make it hot"
         },
 		{
             "id": 24,
@@ -418,7 +420,8 @@
             "keyword1": 
             [
                 "Samus",
-                "Samus Aran"
+                "Samus Aran",
+                "Zero Suit Samus"
             ],
             "keyword2": 
             [
@@ -1480,8 +1483,16 @@
         },
 		{
             "id": 117,
-            "keyword1": "Goat",
-            "keyword2": "Seagull",
+            "keyword1": 
+            [
+                "Goat",
+                "A goat"
+            ],
+            "keyword2": 
+            [
+                "Seagull",
+                "A seagull"
+            ],
             "image": "Goat x Seagull.png"
         },
 		{

@@ -198,7 +198,7 @@ guess_btn.onclick = function () {
     }
 
     if (Array.isArray(keyword2_json)) {
-        keywordlist2 = keyword1_json.map(keyword => keyword.toLowerCase());
+        keywordlist2 = keyword2_json.map(keyword => keyword.toLowerCase());
     } else {
         keywordlist2 = new Array(keyword2_json.toLowerCase());
     }
