@@ -130,14 +130,24 @@ randomreveal_btn.onclick = function () {
     if (x) {
         keyword1.style.backgroundColor = '#e6f5b0';
         keyword1.style.color = 'black';
-        keyword1.value = json_data.mashup[item_id].keyword1;
+        keyword1_json = json_data.mashup[item_id].keyword1;
+        if (Array.isArray(keyword1_json)) {
+            keyword1.value = keyword1_json[0];
+        } else {
+            keyword1.value = keyword1_json;
+        }
         keyword1.disabled = true;
         keyword1_right = true;
         randomreveal_btn.disabled = true;
     } else {
         keyword2.style.backgroundColor = '#e6f5b0';
         keyword2.style.color = 'black';
-        keyword2.value = json_data.mashup[item_id].keyword2;
+        keyword2_json = json_data.mashup[item_id].keyword2;
+        if (Array.isArray(keyword2_json)) {
+            keyword2.value = keyword2_json[0];
+        } else {
+            keyword2.value = keyword2_json;
+        }
         keyword2.disabled = true;
         keyword2_right = true;
         randomreveal_btn.disabled = true;
