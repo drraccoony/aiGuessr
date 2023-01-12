@@ -5,7 +5,7 @@ const APP_VERSION = '1.0.8';                // Application version
 const SCORE_TRACKING = false;               // Should the application log and display scores
 const SCORE_BASE = 500;                     // Score: Starting value for a guess.
 const SCORE_DECAY = -75;                    // Amount to decay score on wrong guesses
-const JSON_FILE = './src/js/mashup.json';   // Where does the JSON file live for items?
+const JSON_FILE = './src/js/test.json';   // Where does the JSON file live for items?
 
 // End of user definable content.
 
