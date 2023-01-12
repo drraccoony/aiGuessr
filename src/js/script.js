@@ -209,8 +209,14 @@ guess_btn.onclick = function () {
         return -1;
     }
 
-    if ((guess1 == guess2) || (guess2 == guess1)) {
+    if (((guess1 == guess2) || (guess2 == guess1))) {
         debugThatShiz('⚠️ You cant guess the same thing twice!');
+        show_message('Two of the same?', 'You guessed the same thing twice, guess something different.', 'alert-danger')
+        return -1;
+    }
+    // Check if the user guessed two different alternate versions of the same keyword
+    if ((keywordlist1.includes(guess1) && keywordlist1.includes(guess2)) || (keywordlist2.includes(guess1) && keywordlist2.includes(guess2))) {
+        debugThatShiz('⚠️ You cant guess two different versions of the same thing twice!');
         show_message('Two of the same?', 'You guessed the same thing twice, guess something different.', 'alert-danger')
         return -1;
     }
