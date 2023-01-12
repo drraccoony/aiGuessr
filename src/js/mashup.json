@@ -4,13 +4,21 @@
         {
             "id": 0,
             "keyword1": "Mario",
-            "keyword2": "Jerma",
+            "keyword2": 
+            [
+                "Jerma",
+                "Jerma985"
+            ],
             "image": "Mario x Jerma.png"
         },
         {
             "id": 1,
             "keyword1": "Mario",
-            "keyword2": "Joker",
+            "keyword2": 
+            [
+                "Joker",
+                "The Joker"
+            ],
             "image": "Mario x Joker.png"
         },
         {
@@ -39,32 +47,67 @@
         },
 		{
             "id": 6,
-            "keyword1": "Mike",
-            "keyword2": "Mask",
+            "keyword1": 
+            [
+                "Mike",
+                "Jabroni Mike",
+                "Jabroni_Mike"
+            ],
+            "keyword2": 
+            [
+                "Mask",
+                "Jazz Master",
+                "Jizz Master"
+            ],
             "image": "Mike x Mask.png"
         },
 		{
             "id": 7,
-            "keyword1": "Mike",
-            "keyword2": "Sonic",
+            "keyword1":
+            [
+                "Mike",
+                "Jabroni Mike",
+                "Jabroni_Mike"
+            ],
+            "keyword2": 
+            [
+                "Sonic",
+                "Sonic the Hedgehog"
+            ],
             "image": "Mike x Sonic.png"
         },
 		{
             "id": 8,
-            "keyword1": "Miku",
+            "keyword1": 
+            [
+                "Miku",
+                "Hatsune Miku"
+            ],
             "keyword2": "Charizard",
             "image": "Miku x Charizard.png"
         },
 		{
             "id": 9,
-            "keyword1": "Miku",
+            "keyword1":
+            [
+                "Miku",
+                "Hatsune Miku"
+            ],
             "keyword2": "Kratos",
             "image": "Miku x Kratos.png"
         },
 		{
             "id": 10,
-            "keyword1": "Miku",
-            "keyword2": "Rick",
+            "keyword1": 
+            [
+                "Miku",
+                "Hatsune Miku"
+            ],
+            "keyword2": 
+            [
+                "Rick",
+                "Rick Sanchez"
+            ],
             "image": "Miku x Rick.png"
         },
 		{
@@ -75,50 +118,117 @@
         },
 		{
             "id": 12,
-            "keyword1": "Morty",
-            "keyword2": "Peter Griffin",
+            "keyword1": 
+            [
+                "Morty",
+                "Morty Smith"
+            ],
+            "keyword2": 
+            [
+                "Peter Griffin",
+                "Peter"
+            ],
             "image": "Morty x Peter Griffin.png"
         },
 		{
             "id": 13,
-            "keyword1": "Mulder",
-            "keyword2": "Scully",
+            "keyword1": 
+            [
+                "Mulder",
+                "Fox Mulder"
+            ],
+            "keyword2": 
+            [
+                "Scully",
+                "Dana Scully"
+            ],
             "image": "Mulder x Scully.png"
         },
 		{
             "id": 14,
-            "keyword1": "Nathan",
-            "keyword2": "Barclay",
+            "keyword1": 
+            [
+                "Nathan",
+                "Nathan Fielder"
+            ],
+            "keyword2": 
+            [
+                "Barclay",
+                "Reginald Barclay",
+                "Lieutenant Barclay",
+                "Lieutenant Broccoli",
+                "Lt Barclay",
+                "Lt Broccoli",
+                "Broccoli"
+            ],
             "image": "Nathan x Barclay.png"
         },
 		{
             "id": 15,
-            "keyword1": "Nathan",
-            "keyword2": "Lady D",
+            "keyword1":
+            [
+                "Nathan",
+                "Nathan Fielder"
+            ],
+            "keyword2": 
+            [
+                "Lady D",
+                "Lady Dimitrescu",
+                "Dimitrescu",
+                "Lady Dommy",
+                "Dommy Mommy"
+            ],
             "image": "Nathan x Lady D.png"
         },
 		{
             "id": 16,
-            "keyword1": "Obrien",
-            "keyword2": "Tails",
+            "keyword1": 
+            [
+                "Obrien",
+                "Miles Obrien",
+                "Colm Meaney"
+            ],
+            "keyword2": 
+            [
+                "Tails",
+                "Tails the Fox",
+                "Miles Prower",
+                "Miles Tails Prower"
+            ],
             "image": "Obrien x Tails.png"
         },
 		{
             "id": 17,
-            "keyword1": "Obrien",
-            "keyword2": "Thomas the Tank Engine",
+            "keyword1":
+            [
+                "Obrien",
+                "Miles Obrien",
+                "Colm Meaney"
+            ],
+            "keyword2": 
+            [
+                "Thomas the Tank Engine",
+                "Thomas"
+            ],
             "image": "Obrien x Thomas the tank engine.png"
         },
 		{
             "id": 18,
             "keyword1": "Odo",
-            "keyword2": "Frodo",
+            "keyword2": [
+                "Frodo",
+                "Frodo Baggins"
+            ],
             "image": "Odo x Frodo.png"
         },
 		{
             "id": 19,
             "keyword1": "Peewee Herman",
-            "keyword2": "Gordon Freeman",
+            "keyword2": 
+            [
+                "Gordon Freeman",
+                "Freeman"
+            ],
             "image": "Peewee Herman x Gordon Freeman .png"
         },
 		{
@@ -129,56 +239,110 @@
         },
 		{
             "id": 21,
-            "keyword1": "Peter Griffin",
-            "keyword2": "Minecraft Steve",
+            "keyword1": 
+            [
+                "Peter Griffin",
+                "Peter"
+            ],
+            "keyword2": 
+            [
+                "Minecraft Steve",
+                "Steve"
+            ],
             "image": "Peter Griffin x Minecraft Steve.png"
         },
 		{
             "id": 22,
-            "keyword1": "Peter Griffin",
-            "keyword2": "Santa",
+            "keyword1": 
+            [
+                "Peter Griffin",
+                "Peter"
+            ],
+            "keyword2": 
+            [
+                "Santa",
+                "Santa Claus"
+            ],
             "image": "Peter Griffin x Santa.png"
         },
 		{
             "id": 23,
-            "keyword1": "Picard",
+            "keyword1": 
+            [
+                "Picard",
+                "Jean Luc Picard",
+                "Jean-Luc Picard",
+                "Captain Picard",
+                "Patrick Stewart"
+            ],
             "keyword2": "Paris Hilton",
             "image": "Picard x Paris Hilton.png"
         },
 		{
             "id": 24,
             "keyword1": "Pickle Rick",
-            "keyword2": "Bob Belcher",
+            "keyword2": 
+            [
+                "Bob Belcher",
+                "Bob's burgers",
+                "Bob"
+            ],
             "image": "Pickle Rick x Bob Belcher.png"
         },
 		{
             "id": 25,
             "keyword1": "Pickle Rick",
-            "keyword2": "Hey Arnold",
+            "keyword2": 
+            [
+                "Hey Arnold",
+                "Arnold",
+                "Arnold Shortman"
+            ],
             "image": "Pickle Rick x Hey Arnold.png"
         },
 		{
             "id": 26,
             "keyword1": "Pickle Rick",
-            "keyword2": "Peter Griffin",
+            "keyword2": 
+            [
+                "Peter Griffin",
+                "Peter"
+            ],
             "image": "Pickle Rick x Peter Griffin.webp"
         },
 		{
             "id": 27,
-            "keyword1": "Chris Pratt",
+            "keyword1": 
+            [
+                "Chris Pratt",
+                "Crisp Rat"
+            ],
             "keyword2": "Mario",
             "image": "Pratt x Mario.png"
         },
 		{
             "id": 28,
-            "keyword1": "Queen",
-            "keyword2": "Pink Floyd",
+            "keyword1": 
+            [
+                "Queen",
+                "Bohemian Rhapsody"
+            ],
+            "keyword2": 
+            [
+                "Pink Floyd",
+                "Dark Side of the Moon",
+                "The Dark Side of the Moon"
+            ],
             "image": "Queen x Pink Floyd.png"
         },
 		{
             "id": 29,
             "keyword1": "Quina",
-            "keyword2": "Frog",
+            "keyword2": 
+            [
+                "Frog",
+                "An actual frog"
+            ],
             "image": "Quina x Frog .png "
         },
 		{
@@ -195,26 +359,72 @@
         },
 		{
             "id": 32,
-            "keyword1": "Riker",
-            "keyword2": "Donald Duck",
+            "keyword1": 
+            [
+                "Riker",
+                "Number one",
+                "Number 1",
+                "Numbah One",
+                "Numbah 1",
+                "William T Riker",
+                "William T. Riker"
+            ],
+            "keyword2": 
+            [
+                "Donald Duck",
+                "Donald"
+            ],
             "image": "Riker x Donald Duck.png"
         },
 		{
             "id": 33,
-            "keyword1": "Riker",
-            "keyword2": "Mickey Mouse",
+            "keyword1":
+            [
+                "Riker",
+                "Number one",
+                "Number 1",
+                "Numbah One",
+                "Numbah 1",
+                "William T Riker",
+                "William T. Riker"
+            ],
+            "keyword2": 
+            [
+                "Mickey Mouse",
+                "Mickey"
+            ],
             "image": "Riker x Mickey Mouse.png"
         },
 		{
             "id": 34,
-            "keyword1": "Samus",
-            "keyword2": "Among Us",
+            "keyword1": 
+            [
+                "Samus",
+                "Samus Aran"
+            ],
+            "keyword2": 
+            [
+                "Among Us",
+                "Amongus",
+                "Amogus",
+                "Among us crewmate",
+                "crewmate",
+                "sus"
+            ],
             "image": "Samus x Among us.png"
         },
 		{
             "id": 35,
-            "keyword1": "Samus",
-            "keyword2": "Master Chief",
+            "keyword1": 
+            [
+                "Samus",
+                "Samus Aran"
+            ],
+            "keyword2": 
+            [
+                "Master Chief",
+                "John Halo"
+            ],
             "image": "Samus x Master Cheif.png"
         },
 		{
@@ -232,72 +442,146 @@
 		{
             "id": 38,
             "keyword1": "Scoot",
-            "keyword2": "Howard the Duck",
+            "keyword2": 
+            [
+                "Howard the Duck",
+                "Howard"
+            ],
             "image": "Scoot x Howard the duck.png"
         },
 		{
             "id": 39,
             "keyword1": "Scoot",
-            "keyword2": "Solid Snake",
+            "keyword2": 
+            [
+                "Solid Snake",
+                "Snake"
+            ],
             "image": "Scoot x Solid Snake.png"
         },
 		{
             "id": 40,
             "keyword1": "Shrek",
-            "keyword2": "Super Saiyan",
+            "keyword2": 
+            [
+                "Super Saiyan",
+                "Vegeta",
+                "Saiyan"
+            ],
             "image": "Shrek vs Super Saiyan.png"
         },
 		{
             "id": 41,
-            "keyword1": "Solid Snake",
-            "keyword2": "Duck",
+            "keyword1": 
+            [
+                "Solid Snake",
+                "Snake"
+            ],
+            "keyword2": 
+            [
+                "Duck",
+                "An actual duck"
+            ],
             "image": "Solid Snake x Duck.png"
         },
 		{
             "id": 42,
-            "keyword1": "Sonic",
+            "keyword1": 
+            [
+                "Sonic",
+                "Sonic the Hedgehog"
+            ],
             "keyword2": "Kratos",
             "image": "Sonic x Kratos.png"
         },
 		{
             "id": 43,
-            "keyword1": "Sonic",
-            "keyword2": "Rainbow Dash",
+            "keyword1": 
+            [
+                "Sonic",
+                "Sonic the Hedgehog"
+            ],
+            "keyword2": 
+            [
+                "Rainbow Dash",
+                "My Little Pony"
+            ],
             "image": "Sonic x Rainbow Dash.png"
         },
 		{
             "id": 44,
-            "keyword1": "Sonic",
-            "keyword2": "Robotnik",
+            "keyword1": 
+            [
+                "Sonic",
+                "Sonic the Hedgehog"
+            ],
+            "keyword2": 
+            [
+                "Robotnik",
+                "Dr Robotnik",
+                "Dr. Robotnik",
+                "Doctor Robotnik",
+                "Eggman",
+                "Dr Eggman",
+                "Dr. Eggman",
+                "Doctor Eggman"
+            ],
             "image": "Sonic x Robotnik.png"
         },
 		{
             "id": 45,
-            "keyword1": "Sonic",
-            "keyword2": "Trump",
+            "keyword1": 
+            [
+                "Sonic",
+                "Sonic the Hedgehog"
+            ],
+            "keyword2": 
+            [
+                "Trump",
+                "Donald Trump",
+                "Donald J Trump",
+                "Orange Man"
+            ],
             "image": "Sonic x Trump.png"
         },
 		{
             "id": 46,
-            "keyword1": "Sonic",
+            "keyword1": 
+            [
+                "Sonic",
+                "Sonic the Hedgehog"
+            ],
             "keyword2": "Wario",
             "image": "Sonic x Wario.png"
         },
 		{
             "id": 47,
-            "keyword1": "Spongebob",
+            "keyword1": 
+            [
+                "Spongebob",
+                "Spongebob squarepants"
+            ],
             "keyword2": "Yoshi",
             "image": "Spongebob x Yoshi.png"
         },
 		{
             "id": 48,
-            "keyword1": "Spongebob",
+            "keyword1": 
+            [
+                "Spongebob",
+                "Spongebob squarepants"
+            ],
             "keyword2": "Zoidberg",
             "image": "Spongebob x Zoidberg.png"
         },
 		{
             "id": 49,
-            "keyword1": "Statue of David",
+            "keyword1": 
+            [
+                "Statue of David",
+                "David",
+                "David (Michelangelo)"
+            ],
             "keyword2": "Chad",
             "image": "Statue of David x Chad.png"
         },
@@ -309,32 +593,68 @@
         },
 		{
             "id": 51,
-            "keyword1": "Steven Tyler",
+            "keyword1": 
+            [
+                "Steven Tyler",
+                "Aerosmith"
+            ],
             "keyword2": "Fish",
-            "image": "Steven Tyler x Fish.png"
+            "image": "Steven Tyler x Fish.png",
+            "hint": "An 80s rock singer x a famous british singer"
         },
 		{
             "id": 52,
-            "keyword1": "Teletubby",
+            "keyword1": 
+            [
+                "Teletubby",
+                "Po",
+                "Red Teletubby"
+            ],
             "keyword2": "Eeyore",
             "image": "Teletubby x Eeyore .png"
         },
 		{
             "id": 53,
-            "keyword1": "The Doctor",
+            "keyword1": 
+            [
+                "The Doctor",
+                "Doctor",
+                "Doc",
+                "Voyager Doctor",
+                "The Doctor from Voyager",
+                "Picardo",
+                "Robert Picardo"
+            ],
             "keyword2": "Bob Ross",
             "image": "The Doctor x Bob Ross.png"
         },
 		{
             "id": 54,
-            "keyword1": "The dude",
-            "keyword2": "Keanu",
+            "keyword1": 
+            [
+                "The dude",
+                "Lebowski",
+                "Jeff Lebowski",
+                "Jeffrey Lebowski",
+                "Big Lebowski",
+                "The Big Lebowski"
+            ],
+            "keyword2": 
+            [
+                "Keanu",
+                "Keanu Reeves"
+            ],
             "image": "The dude x Keanu.png"
         },
 		{
             "id": 55,
             "keyword1": "Toad",
-            "keyword2": "Ganon",
+            "keyword2": 
+            [
+                "Ganon",
+                "Gannon",
+                "Ganondorf"
+            ],
             "image": "Toad x Gannon.png"
         },
 		{
@@ -346,139 +666,359 @@
 		{
             "id": 57,
             "keyword1": "Tom Cruise",
-            "keyword2": "HARK",
+            "keyword2": 
+            [
+                "HARK",
+                "Willem Dafoe",
+                "Dafoe"
+            ],
             "image": "Tom Cruise x HARK.png"
         },
 		{
             "id": 58,
-            "keyword1": "Tommy Wiseau",
+            "keyword1": 
+            [
+                "Tommy Wiseau",
+                "Tommy",
+                "Wiseau"
+            ],
             "keyword2": "Shrek",
             "image": "Tommy W x Shrek.png"
         },
 		{
             "id": 59,
-            "keyword1": "Tommy Wiseau",
-            "keyword2": "Walter White",
+            "keyword1": 
+            [
+                "Tommy Wiseau",
+                "Tommy",
+                "Wiseau"
+            ],
+            "keyword2": 
+            [
+                "Walter White",
+                "Waltuh",
+                "Mister White",
+                "Mr White"
+            ],
             "image": "Tommy W x Walter White.png"
         },
 		{
             "id": 60,
-            "keyword1": "Troll Doll",
-            "keyword2": "Troll",
+            "keyword1": 
+            [
+                "Troll Doll",
+                "Trolls Doll"
+            ],
+            "keyword2": 
+            [
+                "Troll",
+                "A troll",
+                "An actual troll"
+            ],
             "image": "Troll Doll x Troll LOTR.png"
         },
 		{
             "id": 61,
-            "keyword1": "Vinny",
-            "keyword2": "Dante",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Dante",
+                "Donte"
+            ],
             "image": "Vinnxy x DONTE.png"
         },
 		{
             "id": 62,
-            "keyword1": "Vinny",
-            "keyword2": "Gman",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Gman",
+                "The Gman"
+            ],
             "image": "Vinny x Gman.png"
         },
 		{
             "id": 63,
-            "keyword1": "Vinny",
-            "keyword2": "Gordon Freeman",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Gordon Freeman",
+                "Freeman"
+            ],
             "image": "Vinny x Gordon Freeman .png"
         },
 		{
             "id": 64,
-            "keyword1": "Vinny",
-            "keyword2": "HARK",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "HARK",
+                "Willem Dafoe",
+                "Dafoe"
+            ],
             "image": "Vinny x HARK.png"
         },
 		{
             "id": 65,
-            "keyword1": "Vinny",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
             "keyword2": "Harry Potter",
             "image": "Vinny x Harry Potter.png"
         },
 		{
             "id": 66,
-            "keyword1": "Vinny",
-            "keyword2": "Jerma",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Jerma",
+                "Jerma985", 
+                "Jeremy Elbertson"
+            ],
             "image": "Vinny x Jerma 1.png"
         },
 		{
             "id": 67,
-            "keyword1": "Vinny",
-            "keyword2": "Jerma",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Jerma",
+                "Jerma985", 
+                "Jeremy Elbertson"
+            ],
             "image": "Vinny x Jerma 2.png"
         },
 		{
             "id": 68,
-            "keyword1": "Vinny",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
             "keyword2": "John Malkovich",
             "image": "Vinny x John Malkovich .png"
         },
 		{
             "id": 69,
-            "keyword1": "Vinny",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
             "keyword2": "Kreygasm",
             "image": "Vinny x Kreygasm.png"
         },
 		{
             "id": 70,
-            "keyword1": "Vinny",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
             "keyword2": "Meat",
             "image": "Vinny x Meat.png"
         },
 		{
             "id": 71,
-            "keyword1": "Vinny",
-            "keyword2": "Michael Jackson",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Michael Jackson",
+                "MJ"
+            ],
             "image": "Vinny x Michael Jackson.png"
         },
 		{
             "id": 72,
-            "keyword1": "Vinny",
-            "keyword2": "Minecraft Steve",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Minecraft Steve",
+                "Steve"
+            ],
             "image": "Vinny x Minecraft Steve.png"
         },
 		{
             "id": 73,
-            "keyword1": "Vinny",
-            "keyword2": "Ringo",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Ringo",
+                "Ringo Starr"
+            ],
             "image": "Vinny x Ringo.png"
         },
 		{
             "id": 74,
-            "keyword1": "Vinny",
-            "keyword2": "Ross",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Ross",
+                "RubberRoss",
+                "RubberNinja",
+                "Ross Odonovan"
+            ],
             "image": "Vinny x Ross.png"
         },
 		{
             "id": 75,
-            "keyword1": "Vinny",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
             "keyword2": "Ryan Gosling",
             "image": "Vinny x Ryan Gosling.webp"
         },
 		{
             "id": 76,
-            "keyword1": "Vinny",
-            "keyword2": "Thomas the Tank Engine",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Thomas the Tank Engine",
+                "Thomas"
+            ],
             "image": "Vinny x Thomas the tank engine.png"
         },
 		{
             "id": 77,
-            "keyword1": "Vinny",
-            "keyword2": "Todd Howard",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Todd Howard",
+                "Todd"
+            ],
             "image": "Vinny x Todd Howard .png"
         },
 		{
             "id": 78,
-            "keyword1": "Vinny",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
             "keyword2": "Wario",
             "image": "Vinny x Wario.png"
         },
 		{
             "id": 79,
-            "keyword1": "Vinny",
-            "keyword2": "Xenomorph",
+            "keyword1": 
+            [
+                "Vinny",
+                "Vinny Vinesauce",
+                "Vincent Vinesauce",
+                "Vinny Pizzapasta",
+                "Vinesauce"
+            ],
+            "keyword2": 
+            [
+                "Xenomorph",
+                "Alien"
+            ],
             "image": "Vinny x Xenomorph.png"
         },
 		{
@@ -489,26 +1029,67 @@
         },
 		{
             "id": 81,
-            "keyword1": "Walter White",
-            "keyword2": "Morbius",
+            "keyword1": 
+            [
+                "Walter White",
+                "Walter",
+                "Waltuh",
+                "Mr White",
+                "Mister White"
+            ],
+            "keyword2": 
+            [
+                "Morbius",
+                "Michael Morbius"
+            ],
             "image": "Walter White x Morbius.png"
         },
 		{
             "id": 82,
-            "keyword1": "Walter White",
-            "keyword2": "Ziggy Stardust",
+            "keyword1": 
+            [
+                "Walter White",
+                "Walter",
+                "Waltuh",
+                "Mr White",
+                "Mister White"
+            ],
+            "keyword2": 
+            [
+                "Ziggy Stardust",
+                "Bowie",
+                "David Bowie"
+            ],
             "image": "Walter White x Ziggy Stardust.png"
         },
 		{
             "id": 83,
             "keyword1": "Wario",
-            "keyword2": "Danny Devito",
+            "keyword2": 
+            [
+                "Danny Devito",
+                "Devito",
+                "Frank",
+                "Frank Reynolds"
+            ],
             "image": "Wario x Devito.png"
         },
 		{
             "id": 84,
-            "keyword1": "Walter White",
-            "keyword2": "Pinkman",
+            "keyword1": 
+            [
+                "Walter White",
+                "Walter",
+                "Waltuh",
+                "Mr White",
+                "Mister White"
+            ],
+            "keyword2": 
+            [
+                "Pinkman",
+                "Jesse",
+                "Jesse Pinkman"
+            ],
             "image": "White x Pinkman.png"
         },
 		{
@@ -532,7 +1113,11 @@
 		{
             "id": 88,
             "keyword1": "Zelda",
-            "keyword2": "Solid Snake",
+            "keyword2": 
+            [
+                "Solid Snake",
+                "Snake"
+            ],
             "image": "Zelda x Snake.png"
         },
 		{
@@ -543,14 +1128,35 @@
         },
 		{
             "id": 90,
-            "keyword1": "Among Us",
-            "keyword2": "Splatoon",
+            "keyword1": 
+            [
+                "Among Us",
+                "Amongus",
+                "Amogus",
+                "Among us crewmate",
+                "crewmate",
+                "sus"
+            ],
+            "keyword2": 
+            [
+                "Splatoon",
+                "Inkling",
+                "Squid kid",
+                "Squid",
+                "Inkling kid",
+                "Octoling",
+                "Octarian"
+            ],
             "image": "Amogus x Splatoon.png"
         },
 		{
             "id": 91,
             "keyword1": "Bender",
-            "keyword2": "Rick",
+            "keyword2": 
+            [
+                "Rick",
+                "Rick Sanchez"
+            ],
             "image": "Bender x Rick.png"
         },
 		{
@@ -561,20 +1167,40 @@
         },
 		{
             "id": 93,
-            "keyword1": "CDI Link",
-            "keyword2": "Batman",
+            "keyword1": 
+            [
+                "CDI Link",
+                "Link"
+            ],
+            "keyword2": 
+            [
+                "Batman",
+                "The Batman"
+            ],
             "image": "CDI Link x Batman.png"
         },
 		{
             "id": 94,
-            "keyword1": "CDI Link",
+            "keyword1": 
+            [
+                "CDI Link",
+                "Link"
+            ],
             "keyword2": "Luigi",
             "image": "CDI Link x Luigi.png"
         },
 		{
             "id": 95,
-            "keyword1": "CDI Link",
-            "keyword2": "Spongebob",
+            "keyword1": 
+            [
+                "CDI Link",
+                "Link"
+            ],
+            "keyword2": 
+            [
+                "Spongebob",
+                "Spongebob Squarepants"
+            ],
             "image": "CDI Link x Spongebob.png"
         },
 		{
@@ -586,120 +1212,269 @@
 		{
             "id": 97,
             "keyword1": "Charizard",
-            "keyword2": "Lightning McQueen",
+            "keyword2": 
+            [
+                "Lightning McQueen",
+                "McQueen",
+                "Kachow"
+            ],
             "image": "Charizard x Lightning Mcqueen.png"
         },
 		{
             "id": 98,
-            "keyword1": "Cloud",
-            "keyword2": "Buster",
-            "image": "Cloud x Buster from Arnold.png"
+            "keyword1": 
+            [
+                "Cloud",
+                "Cloud Strife"
+            ],
+            "keyword2": 
+            [
+                "Buster",
+                "Buster the rabbit",
+                "Buster Baxter"
+            ],
+            "image": "Cloud x Buster from Arnold.png",
+            "hint" : "Edgy protagonist x character from Hey Arnold"
         },
 		{
             "id": 99,
-            "keyword1": "Cloud",
-            "keyword2": "Kermit",
+            "keyword1": 
+            [
+                "Cloud",
+                "Cloud Strife"
+            ],
+            "keyword2": 
+            [
+                "Kermit",
+                "Kermit the Frog"
+            ],
             "image": "Cloud x Kermit.png"
         },
 		{
             "id": 100,
-            "keyword1": "Cloud",
-            "keyword2": "Worf",
+            "keyword1": 
+            [
+                "Cloud",
+                "Cloud Strife"
+            ],
+            "keyword2": 
+            [
+                "Worf",
+                "Lt Worf",
+                "Lieutenant Worf",
+                "Worf song of mogh"
+            ],
             "image": "Cloud x Worf.png"
         },
 		{
             "id": 101,
             "keyword1": "Darth Vader",
-            "keyword2": "Elvis",
+            "keyword2": 
+            [
+                "Elvis",
+                "Elvis Presley"
+            ],
             "image": "Darth Vader x Elvis .png"
         },
 		{
             "id": 102,
             "keyword1": "Data",
-            "keyword2": "Obama",
+            "keyword2": 
+            [
+                "Obama",
+                "Barack Obama"
+            ],
             "image": "Data x Obama.png"
         },
 		{
             "id": 103,
-            "keyword1": "King DedeDe",
+            "keyword1": 
+            [
+                "King DedeDe",
+                "DeDeDe",
+                "DDD"
+            ],
             "keyword2": "Gubble",
-            "image": "DeDeDe x Gubble.png"
+            "image": "DeDeDe x Gubble.png",
+            "hint": "Kirby villain x protagonist of the greatest game GreatSphynx ever played"
         },
 		{
             "id": 104,
-            "keyword1": "King DeDeDe",
-            "keyword2": "Predator",
+            "keyword1": 
+            [
+                "King DedeDe",
+                "DeDeDe",
+                "DDD"
+            ],
+            "keyword2": 
+            [
+                "Predator",
+                "The Predator"
+            ],
             "image": "DeDeDe x Predator.png"
         },
 		{
             "id": 105,
-            "keyword1": "Dr Wily",
-            "keyword2": "Predator",
+            "keyword1": 
+            [
+                "Dr Wily",
+                "Doctor Wily",
+                "Dr Wiley",
+                "Doctor Wiley"
+            ],
+            "keyword2": 
+            [
+                "Predator",
+                "The Predator"
+            ],
             "image": "Dr Wily x Predator .png"
         },
 		{
             "id": 106,
-            "keyword1": "Elon Musk",
-            "keyword2": "Mona Lisa",
+            "keyword1": 
+            [
+                "Elon Musk",
+                "Elon",
+                "Musk",
+                "Dumbass"
+            ],
+            "keyword2": 
+            [
+                "Mona Lisa",
+                "The Mona Lisa"
+            ],
             "image": "Elon Musk x Mona Lisa.png"
         },
 		{
             "id": 107,
-            "keyword1": "Elon Musk",
+            "keyword1": 
+            [
+                "Elon Musk",
+                "Elon",
+                "Musk",
+                "Dumbass"
+            ],
             "keyword2": "Ronald McDonald",
             "image": "Elon Musk x Ronald Mcdonald.png"
         },
 		{
             "id": 108,
-            "keyword1": "Eminem",
+            "keyword1": 
+            [
+                "Eminem",
+                "Marshall Bruce Mathers III"
+            ],
             "keyword2": "Harrison Ford",
             "image": "Eminem x Harrison ford.png"
         },
 		{
             "id": 109,
-            "keyword1": "ET",
-            "keyword2": "Leno",
+            "keyword1": 
+            [
+                "ET",
+                "E.T."
+            ],
+            "keyword2": 
+            [
+                "Leno",
+                "Jay Leno",
+                "Grey Leno",
+                "Gray Leno"
+            ],
             "image": "ET x Leno.png"
         },
 		{
             "id": 110,
             "keyword1": "Fish with Teeth",
-            "keyword2": ":)",
-            "image": "Fish with teeth x Smiley Emoji.png"
+            "keyword2": 
+            [
+                ":)",
+                "chatSmile",
+                "Twitch smiley face",
+                "chat",
+                "Twitch chat"
+            ],
+            "image": "Fish with teeth x Smiley Emoji.png",
+            "hint" : "WAR meme x emote"
         },
 		{
             "id": 111,
-            "keyword1": "Gordon Freeman",
-            "keyword2": "Alyx",
+            "keyword1": 
+            [
+                "Gordon Freeman",
+                "Freeman"
+            ],
+            "keyword2": 
+            [
+                "Alyx",
+                "Alyx Vance"
+            ],
             "image": "Freeman x Alyx.png"
         },
 		{
             "id": 112,
-            "keyword1": "Frodo",
-            "keyword2": "Gollum",
+            "keyword1": 
+            [
+                "Frodo",
+                "Frodo Baggins"
+            ],
+            "keyword2": 
+            [
+                "Gollum",
+                "Smeagol"
+            ],
             "image": "Frodo x Gollum.png"
         },
 		{
             "id": 113,
-            "keyword1": "Frog",
-            "keyword2": "Duck",
+            "keyword1": 
+            [
+                "Frog",
+                "An actual frog",
+                "A frog"
+            ],
+            "keyword2": 
+            [
+                "Duck",
+                "An actual duck",
+                "A duck"
+            ],
             "image": "Frog x Duck.png"
         },
 		{
             "id": 114,
-            "keyword1": "Girls with Earing",
-            "keyword2": "Moai",
+            "keyword1": 
+            [
+                "Girl with Earring",
+                "Girl with an Earring",
+                "Girl with a pearl earring",
+                "Girl with Pearl Earring"
+            ],
+            "keyword2": 
+            [
+                "Moai",
+                "Moai Head",
+                "Smitty"
+            ],
             "image": "Girls with earing v Moai.png"
         },
 		{
             "id": 115,
-            "keyword1": "Gman",
+            "keyword1": 
+            [
+                "Gman",
+                "The Gman"
+            ],
             "keyword2": "Yoda",
             "image": "Gman x Yoda.png"
         },
 		{
             "id": 116,
-            "keyword1": "Gnorts",
+            "keyword1": 
+            [
+                "Gnorts",
+                "Gnorts Mr Alien"
+            ],
             "keyword2": "Meat",
             "image": "Gnorts x Meat.png"
         },
@@ -711,9 +1486,21 @@
         },
 		{
             "id": 118,
-            "keyword1": "Pierce Brosnan",
-            "keyword2": "Dante",
-            "image": "Goldeneye x DONTE.png"
+            "keyword1": 
+            [
+                "Pierce Brosnan",
+                "007",
+                "Goldeneye",
+                "James Bond",
+                "Bond"
+            ],
+            "keyword2": 
+            [
+                "Dante",
+                "Donte"
+            ],
+            "image": "Goldeneye x DONTE.png",
+            "hint" : "bonty pls plae DMC7"
         },
 		{
             "id": 119,
@@ -730,20 +1517,43 @@
 		{
             "id": 121,
             "keyword1": "Gollum",
-            "keyword2": "Ziggy Stardust",
+            "keyword2": 
+            [
+                "Ziggy Stardust",
+                "Bowie",
+                "David Bowie"
+            ],
             "image": "Gollum x Ziggy Stardust.png"
         },
 		{
             "id": 122,
-            "keyword1": "Gordon Freeman",
-            "keyword2": "Samus",
+            "keyword1": 
+            [
+                "Gordon Freeman",
+                "Freeman"
+            ],
+            "keyword2": 
+            [
+                "Samus",
+                "Samus Aran"
+            ],
             "image": "Gordon Freeman x Samus .png "
         },
 		{
             "id": 123,
-            "keyword1": "Gremlin",
-            "keyword2": "Troll 2 Goblin",
-            "image": "Gremlin x Goblin from troll 2.png"
+            "keyword1": 
+            [
+                "Gremlin",
+                "Gizmo"
+            ],
+            "keyword2": 
+            [
+                "Troll 2 Goblin",
+                "Troll 2",
+                "Goblin"
+            ],
+            "image": "Gremlin x Goblin from troll 2.png",
+            "hint": "One of them is from Nilbog"
         },
 		{
             "id": 124,
@@ -759,38 +1569,93 @@
         },
 		{
             "id": 126,
-            "keyword1": "Jerma",
+            "keyword1": 
+            [
+                "Jerma",
+                "Jerma985",
+                "Jeremy Elbertson"
+            ],
             "keyword2": "Gollum",
             "image": "Jerma x Gollum.png"
         },
 		{
             "id": 127,
-            "keyword1": "Jerma",
-            "keyword2": "Joker",
+            "keyword1": 
+            [
+                "Jerma",
+                "Jerma985",
+                "Jeremy Elbertson"
+            ],
+            "keyword2": 
+            [
+                "Joker",
+                "The Joker"
+            ],
             "image": "Jerma x Joker.png"
         },
 		{
             "id": 128,
-            "keyword1": "Jerma",
-            "keyword2": "Joker",
+            "keyword1": 
+            [
+                "Jerma",
+                "Jerma985",
+                "Jeremy Elbertson"
+            ],
+            "keyword2": 
+            [
+                "Joker",
+                "The Joker"
+            ],
             "image": "Jerma x Joker.png"
         },
 		{
             "id": 129,
-            "keyword1": "Jerma",
-            "keyword2": "Rat",
+            "keyword1": 
+            [
+                "Jerma",
+                "Jerma985",
+                "Jeremy Elbertson"
+            ],
+            "keyword2": 
+            [
+                "Rat",
+                "A rat",
+                "Giant rat",
+                "The giant rat",
+                "The giant rat that makes all of the rules",
+                "The giant rat that makes all of da rules",
+                "An actual rat"
+            ],
             "image": "Jerma x Rat.png"
         },
 		{
             "id": 130,
-            "keyword1": "Jerry",
-            "keyword2": "George",
+            "keyword1": 
+            [
+                "Jerry",
+                "Seinfeld",
+                "Jerry Seinfeld"
+            ],
+            "keyword2": 
+            [
+                "George",
+                "George Costanza"
+            ],
             "image": "Jerry x George.png"
         },
 		{
             "id": 131,
-            "keyword1": "Jerry",
-            "keyword2": "Joker",
+            "keyword1": 
+            [
+                "Jerry",
+                "Seinfeld",
+                "Jerry Seinfeld"
+            ],
+            "keyword2": 
+            [
+                "Joker",
+                "The Joker"
+            ],
             "image": "Jerry x Joker.png"
         },
 		{
@@ -801,56 +1666,112 @@
         },
 		{
             "id": 133,
-            "keyword1": "Karl",
-            "keyword2": "Freddy Mercury",
+            "keyword1": 
+            [
+                "Karl",
+                "Karl Pilkington"
+            ],
+            "keyword2": 
+            [
+                "Freddy Mercury",
+                "Freddie Mercury"
+            ],
             "image": "Karl x Freddy Mercury.png"
         },
 		{
             "id": 134,
-            "keyword1": "Karl",
-            "keyword2": "Jar Jar",
+            "keyword1": 
+            [
+                "Karl",
+                "Karl Pilkington"
+            ],
+            "keyword2": 
+            [
+                "Jar Jar",
+                "Jar Jar Binks",
+                "Jar-jar",
+                "Jar-jar Binks"
+            ],
             "image": "Karl x Jar Jar.png"
         },
 		{
             "id": 135,
-            "keyword1": "Karl",
-            "keyword2": "Ricky",
+            "keyword1": 
+            [
+                "Karl",
+                "Karl Pilkington"
+            ],
+            "keyword2": 
+            [
+                "Ricky",
+                "Ricky Gervais"
+            ],
             "image": "Karl x Ricky.png"
         },
 		{
             "id": 136,
-            "keyword1": "Keanu",
+            "keyword1": 
+            [
+                "Keanu",
+                "Keanu Reeves"
+            ],
             "keyword2": "Harrison Ford",
             "image": "Keanu x Harrison Ford.png"
         },
 		{
             "id": 137,
             "keyword1": "Kefka",
-            "keyword2": "Kermit",
+            "keyword2": 
+            [
+                "Kermit",
+                "Kermit the Frog"
+            ],
             "image": "Kefka x Kermit.png"
         },
 		{
             "id": 138,
             "keyword1": "Kim Jong Un",
-            "keyword2": "Jesus",
+            "keyword2": 
+            [
+                "Jesus",
+                "Jesus Christ"
+            ],
             "image": "Kim Jong Un x Jesus.png"
         },
 		{
             "id": 139,
             "keyword1": "Kim Jong Un",
-            "keyword2": "Mona Lisa",
+            "keyword2": 
+            [
+                "Mona Lisa",
+                "The Mona Lisa"
+            ],
             "image": "Kim Jong Un x Mona Lisa.png"
         },
 		{
             "id": 140,
-            "keyword1": "Knuckles",
-            "keyword2": "Spongebob",
+            "keyword1": 
+            [
+                "Knuckles",
+                "Knuckles the Echidna",
+                "Knuckles the Enchilada",
+                "& Knuckles"
+            ],
+            "keyword2": 
+            [
+                "Spongebob",
+                "Spongebob Squarepants"
+            ],
             "image": "Knuckles and Spongebob.png"
         },
 		{
             "id": 141,
             "keyword1": "Kratos",
-            "keyword2": "Gman",
+            "keyword2": 
+            [
+                "Gman",
+                "The Gman"
+            ],
             "image": "Kratos x Gman.png"
         },
 		{
@@ -859,14 +1780,28 @@
             "keyword2": 
             [
                 "Lady D",
-                "lady dimitrescu"
+                "Lady Dimitrescu",
+                "Dimitrescu",
+                "Lady Dommy",
+                "Dommy Mommy"
             ],
             "image": "Kratos x Lady D.png"
         },
 		{
             "id": 143,
-            "keyword1": "Leia",
-            "keyword2": "Ozzy",
+            "keyword1": 
+            [
+                "Leia",
+                "Princess Leia",
+                "Leia Organa",
+                "Princess Leia Organa",
+                "Carrie Fisher"
+            ],
+            "keyword2": 
+            [
+                "Ozzy",
+                "Ozzy Osbourne"
+            ],
             "image": "Lei x Ozzy.png"
         },
 		{
@@ -878,13 +1813,21 @@
 		{
             "id": 145,
             "keyword1": "Link",
-            "keyword2": "Samus",
+            "keyword2": 
+            [
+                "Samus",
+                "Samus Aran"
+            ],
             "image": "Link x Samus 2.png"
         },
 		{
             "id": 146,
             "keyword1": "Link",
-            "keyword2": "Samus",
+            "keyword2": 
+            [
+                "Samus",
+                "Samus Aran"
+            ],
             "image": "Link x Samus.png"
         },
 		{
