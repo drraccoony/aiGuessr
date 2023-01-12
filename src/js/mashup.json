@@ -856,7 +856,11 @@
 		{
             "id": 142,
             "keyword1": "Kratos",
-            "keyword2": "Lady D",
+            "keyword2": 
+            [
+                "Lady D",
+                "lady dimitrescu"
+            ],
             "image": "Kratos x Lady D.png"
         },
 		{
