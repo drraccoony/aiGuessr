@@ -157,11 +157,21 @@ randomreveal_btn.onclick = function () {
 giveup_btn.onclick = function () {
     keyword1.style.backgroundColor = '#f5b0c3';
     keyword1.style.color = 'black';
-    keyword1.value = json_data.mashup[item_id].keyword1;
+    keyword1_json = json_data.mashup[item_id].keyword1;
+    if (Array.isArray(keyword1_json)) {
+        keyword1.value = keyword1_json[0];
+    } else {
+        keyword1.value = keyword1_json;
+    }
     keyword1.disabled = true;
     keyword2.style.backgroundColor = '#f5b0c3';
     keyword2.style.color = 'black';
-    keyword2.value = json_data.mashup[item_id].keyword2;
+    keyword2_json = json_data.mashup[item_id].keyword2;
+    if (Array.isArray(keyword2_json)) {
+        keyword2.value = keyword2_json[0];
+    } else {
+        keyword2.value = keyword2_json;
+    }
     keyword2.disabled = true;
     randomreveal_btn.disabled = true;
     giveup_btn.disabled = true;
