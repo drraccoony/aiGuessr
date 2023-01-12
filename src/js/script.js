@@ -172,15 +172,13 @@ guess_btn.onclick = function () {
     let keywordlist2;
 
     if (Array.isArray(keyword1_json)) {
-        keywordlist1 = keyword1_json;
-        // TODO: Iterate over the keywords and .toLowerCase() them all
+        keywordlist1 = keyword1_json.map(keyword => keyword.toLowerCase());
     } else {
         keywordlist1 = new Array(keyword1_json.toLowerCase());
     }
 
     if (Array.isArray(keyword2_json)) {
-        keywordlist2 = keyword1_json;
-        // TODO: Iterate over the keywords and .toLowerCase() them all
+        keywordlist2 = keyword1_json.map(keyword => keyword.toLowerCase());
     } else {
         keywordlist2 = new Array(keyword2_json.toLowerCase());
     }
@@ -197,7 +195,7 @@ guess_btn.onclick = function () {
         return -1;
     }
     // Check if they got both right in one go
-    if ((guess1 == keyword1_json) && (guess2 == keyword2_json)) {
+    if ((keywordlist1.includes(guess1)) && (keywordlist2.includes(guess2))) {
         debugThatShiz('✅ Correct guess! You got both words right!')
         if (SCORE_TRACKING == true)
             show_message('Great job!', 'You figured out the AI mashup! +' + item_value + ' points!', 'alert-success')
@@ -209,7 +207,7 @@ guess_btn.onclick = function () {
         keyword_success(keyword2);
         keyword1_right = true;
         keyword2_right = true;
-    } else if ((guess1 == keyword2_json) && (guess2 == keyword1_json)) {
+    } else if ((keywordlist1.includes(guess2)) && (keywordlist2.includes(guess1))) {
         // Does the guess match inverted?
         if (SCORE_TRACKING == true)
             show_message('Great job!', 'You figured out the AI mashup! +' + item_value + ' points!', 'alert-success')
@@ -221,7 +219,7 @@ guess_btn.onclick = function () {
         keyword_success(keyword2);
         debugThatShiz('✅ Correct guess! You got both words right! (They were flipped)')
     }
-    else if (((guess1 == keyword1_json) || (guess1 == keyword2_json)) && keyword1_right == false) {
+    else if (((keywordlist1.includes(guess1)) || (keywordlist2.includes(guess1))) && keyword1_right == false) {
         // Does the word1 match either keyword? If so, mark it right.
         debugThatShiz('✅ You got word 1 right')
         document.getElementById("table-itemvalue").innerHTML = item_value;
@@ -230,7 +228,7 @@ guess_btn.onclick = function () {
         randomreveal_btn.disabled = true;
         keyword1_right = true;
     }
-    else if (((guess2 == keyword1_json) || (guess2 == keyword2_json)) && keyword2_right == false) {
+    else if (((keywordlist1.includes(guess2)) || (keywordlist2.includes(guess2))) && keyword2_right == false) {
         // Does the word2 match either keyword? If so, mark it right.
         debugThatShiz('✅ You got word 2 right')
         document.getElementById("table-itemvalue").innerHTML = item_value;
