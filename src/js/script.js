@@ -167,6 +167,7 @@ guess_btn.onclick = function () {
     let keyword1_json = json_data.mashup[item_id].keyword1;
     let keyword2_json = json_data.mashup[item_id].keyword2;
 
+    // Build a list of all of the correct keywords, taking the array directly from JSON if it was stored as such, otherwise, assuming it was a single string
     let keywordlist1;
     let keywordlist2;
 
