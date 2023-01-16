@@ -130,14 +130,24 @@ randomreveal_btn.onclick = function () {
     if (x) {
         keyword1.style.backgroundColor = '#e6f5b0';
         keyword1.style.color = 'black';
-        keyword1.value = json_data.mashup[item_id].keyword1;
+        let keyword1_json = json_data.mashup[item_id].keyword1;
+        if (Array.isArray(keyword1_json)) {
+            keyword1.value = keyword1_json[0];
+        } else {
+            keyword1.value = keyword1_json;
+        }
         keyword1.disabled = true;
         keyword1_right = true;
         randomreveal_btn.disabled = true;
     } else {
         keyword2.style.backgroundColor = '#e6f5b0';
         keyword2.style.color = 'black';
-        keyword2.value = json_data.mashup[item_id].keyword2;
+        let keyword2_json = json_data.mashup[item_id].keyword2;
+        if (Array.isArray(keyword2_json)) {
+            keyword2.value = keyword2_json[0];
+        } else {
+            keyword2.value = keyword2_json;
+        }
         keyword2.disabled = true;
         keyword2_right = true;
         randomreveal_btn.disabled = true;
@@ -147,11 +157,21 @@ randomreveal_btn.onclick = function () {
 giveup_btn.onclick = function () {
     keyword1.style.backgroundColor = '#f5b0c3';
     keyword1.style.color = 'black';
-    keyword1.value = json_data.mashup[item_id].keyword1;
+    let keyword1_json = json_data.mashup[item_id].keyword1;
+    if (Array.isArray(keyword1_json)) {
+        keyword1.value = keyword1_json[0];
+    } else {
+        keyword1.value = keyword1_json;
+    }
     keyword1.disabled = true;
     keyword2.style.backgroundColor = '#f5b0c3';
     keyword2.style.color = 'black';
-    keyword2.value = json_data.mashup[item_id].keyword2;
+    let keyword2_json = json_data.mashup[item_id].keyword2;
+    if (Array.isArray(keyword2_json)) {
+        keyword2.value = keyword2_json[0];
+    } else {
+        keyword2.value = keyword2_json;
+    }
     keyword2.disabled = true;
     randomreveal_btn.disabled = true;
     giveup_btn.disabled = true;
@@ -164,8 +184,24 @@ guess_btn.onclick = function () {
     //Make everything lower case so we don't have to deal with case
     let guess1 = keyword1.value.toLowerCase();
     let guess2 = keyword2.value.toLowerCase();
-    let keyword1_json = json_data.mashup[item_id].keyword1.toLowerCase();
-    let keyword2_json = json_data.mashup[item_id].keyword2.toLowerCase();
+    let keyword1_json = json_data.mashup[item_id].keyword1;
+    let keyword2_json = json_data.mashup[item_id].keyword2;
+
+    // Build a list of all of the correct keywords, taking the array directly from JSON if it was stored as such, otherwise, assuming it was a single string and building a new single-element array from scratch
+    let keywordlist1;
+    let keywordlist2;
+
+    if (Array.isArray(keyword1_json)) {
+        keywordlist1 = keyword1_json.map(keyword => keyword.toLowerCase());
+    } else {
+        keywordlist1 = new Array(keyword1_json.toLowerCase());
+    }
+
+    if (Array.isArray(keyword2_json)) {
+        keywordlist2 = keyword2_json.map(keyword => keyword.toLowerCase());
+    } else {
+        keywordlist2 = new Array(keyword2_json.toLowerCase());
+    }
 
     if ((keyword1.value.length === 0 && keyword2.value.length === 0)) {
         debugThatShiz('⚠️ Empty guess.');
@@ -173,13 +209,19 @@ guess_btn.onclick = function () {
         return -1;
     }
 
-    if ((guess1 == guess2) || (guess2 == guess1)) {
+    if (((guess1 == guess2) || (guess2 == guess1))) {
         debugThatShiz('⚠️ You cant guess the same thing twice!');
         show_message('Two of the same?', 'You guessed the same thing twice, guess something different.', 'alert-danger')
         return -1;
     }
+    // Check if the user guessed two different alternate versions of the same keyword
+    if ((keywordlist1.includes(guess1) && keywordlist1.includes(guess2)) || (keywordlist2.includes(guess1) && keywordlist2.includes(guess2))) {
+        debugThatShiz('⚠️ You cant guess two different versions of the same thing twice!');
+        show_message('Two of the same?', 'You guessed the same thing twice, guess something different.', 'alert-danger')
+        return -1;
+    }
     // Check if they got both right in one go
-    if ((guess1 == keyword1_json) && (guess2 == keyword2_json)) {
+    if ((keywordlist1.includes(guess1)) && (keywordlist2.includes(guess2))) {
         debugThatShiz('✅ Correct guess! You got both words right!')
         if (SCORE_TRACKING == true)
             show_message('Great job!', 'You figured out the AI mashup! +' + item_value + ' points!', 'alert-success')
@@ -191,7 +233,7 @@ guess_btn.onclick = function () {
         keyword_success(keyword2);
         keyword1_right = true;
         keyword2_right = true;
-    } else if ((guess1 == keyword2_json) && (guess2 == keyword1_json)) {
+    } else if ((keywordlist1.includes(guess2)) && (keywordlist2.includes(guess1))) {
         // Does the guess match inverted?
         if (SCORE_TRACKING == true)
             show_message('Great job!', 'You figured out the AI mashup! +' + item_value + ' points!', 'alert-success')
@@ -203,20 +245,20 @@ guess_btn.onclick = function () {
         keyword_success(keyword2);
         debugThatShiz('✅ Correct guess! You got both words right! (They were flipped)')
     }
-    else if (((guess1 == keyword1_json) || (guess1 == keyword2_json)) && keyword1_right == false) {
+    else if (((keywordlist1.includes(guess1)) || (keywordlist2.includes(guess1))) && keyword1_right == false) {
         // Does the word1 match either keyword? If so, mark it right.
         debugThatShiz('✅ You got word 1 right')
         document.getElementById("table-itemvalue").innerHTML = item_value;
-        show_message('Thats one...', 'You figured out one of the two mashup keywords.', 'alert-success')
+        show_message('That\'s one...', 'You figured out one of the two mashup keywords.', 'alert-success')
         keyword_success(keyword1);
         randomreveal_btn.disabled = true;
         keyword1_right = true;
     }
-    else if (((guess2 == keyword1_json) || (guess2 == keyword2_json)) && keyword2_right == false) {
+    else if (((keywordlist1.includes(guess2)) || (keywordlist2.includes(guess2))) && keyword2_right == false) {
         // Does the word2 match either keyword? If so, mark it right.
         debugThatShiz('✅ You got word 2 right')
         document.getElementById("table-itemvalue").innerHTML = item_value;
-        show_message('Thats one...', 'You figured out one of the two mashup keywords.', 'alert-success')
+        show_message('That\'s one...', 'You figured out one of the two mashup keywords.', 'alert-success')
         keyword_success(keyword2);
         randomreveal_btn.disabled = true;
         keyword2_right = true;

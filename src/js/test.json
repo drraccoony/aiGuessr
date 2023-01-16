@@ -2,7 +2,11 @@
     "mashup": [
         {
             "id": 0,
-            "keyword1": "Blue A",
+            "keyword1": 
+            [
+                "Blue A alternate",
+                "Blue A"
+            ],
             "keyword2": "Blue B",
             "image": "test-image.jpg",
             "hint": "Blue A and Blue B"
