@@ -16,12 +16,15 @@ New generations and images can be added by placing the image in the directory, a
 
 1. Place your image within `/img` directory, with a somewhat descriptive filename.
 2. Open `src/js/mashup.json` in your favorite text editor.
-3. Following the object format, add a new json object, maintaining the existing keys.
+3. Following the object format, add a new json object, maintaining the existing keys, if a keyword can be guessed in different keywords, you can use an array in place of a string (Thanks JTJutajoh!)
 
     ```json
     "id": 0,
     "keyword1": "Mario",
-    "keyword2": "Seinfeld",
+    "keyword2": [
+                "Seinfeld",
+                "Jerry Seinfeld"
+            ],
     "image": "MarioAndSeinfeld.png",
     "hint": "Whats the deal with koopas?!"
     ```
