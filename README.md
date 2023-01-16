@@ -24,7 +24,7 @@ New generations and images can be added by placing the image in the directory, a
     "keyword2": [
                 "Seinfeld",
                 "Jerry Seinfeld"
-            ],
+                ],
     "image": "MarioAndSeinfeld.png",
     "hint": "Whats the deal with koopas?!"
     ```
